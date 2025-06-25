@@ -2,9 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Clone') {
-      steps {
-        git 'https://github.com/anthonystln/DevOpsProject.git'
-      }
+        steps {
+            echo 'Repo already cloned by Jenkins.'
+        }
     }
     stage('Build') {
       steps {
